@@ -100,6 +100,68 @@ body {
     .header-navigation button {
         display: none;
     }
+
+    .header-navigation ul {
+        display: none;
+    }
+    
+}
+
+
+
+
+
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.navLinks {
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-around;
+    position: absolute;
+    right: 0px;
+    height: 90vh;
+    top: -90vh;
+    background-color: darkcyan;
+    align-items: center;
+    width: 20%;
+}
+
+
+.navActive {
+    transform: translateY(100vh);
+}
+
+.navLinks li {
+    list-style: none;
+}
+
+.navLinks a {
+    color: darkmagenta;
+    text-decoration: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(221, 184, 191);
+    margin: 5px;
+    border-radius: 25%;
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
 
 
