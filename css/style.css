@@ -13,8 +13,8 @@
 }
 
 body {
-    min-height: 300vh;
     position: relative;
+    width: 100vw;
 }
 
 #wrapper {
@@ -127,14 +127,14 @@ nav {
 .navLinks {
     display: none;
     flex-direction: column;
-    justify-content: space-around;
     position: absolute;
     right: -40px;
-    height: 300vh;
+    height: 110vh;
     top: -110vh;
     background-color: darkcyan;
     align-items: center;
-    width: 40%;
+    width: 18rem;
+    padding-top: 10rem;
 }
 
 .navActive {
@@ -144,11 +144,6 @@ nav {
 
 .navLinks li {
     list-style: none;
-}
-
-.navLinks a {
-    color: darkmagenta;
-    text-decoration: none;
 }
 
 .burger div {
@@ -171,6 +166,15 @@ nav {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
+a:hover {
+    color: rgb(36, 36, 44);
+}
+
+.side-menu-links {
+    display: block !important;
+    margin-top: 3rem;
+}
+
 
 
 
@@ -186,6 +190,33 @@ nav {
 main {
     padding: 5rem;
 }
+
+#article-start-poster {
+    background-color: blue;
+    margin: 1rem;
+    padding: 4rem;
+    height: 30rem;
+    width: 20rem;
+}
+
+#article-start-nyheter {
+    background-color: blue;
+    margin: 1rem;
+    padding: 4rem;
+    height: 30rem;
+    width: 20rem;
+}
+
+#article-start-inspiration {
+    background-color: blue;
+    margin: 1rem;
+    padding: 4rem;
+    height: 30rem;
+    width: 20rem;
+}
+
+
+
 
 
 
@@ -216,6 +247,20 @@ footer {
 h4 {
     display: flex;
     justify-content: center;
+}
+
+.footertext {
+    text-align: center;
+}
+
+#footerlogga {
+    display: flex;
+    justify-content: center;
+}
+
+.footerlogga {
+    width: 15rem;
+    margin-bottom: 2rem;
 }
 
 #footera1 {
@@ -264,7 +309,7 @@ h4 {
     }
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1100px){
     
     #footersection {
         display: grid;
