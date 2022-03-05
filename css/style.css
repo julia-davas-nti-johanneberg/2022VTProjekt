@@ -9,16 +9,18 @@
     --header-height-difference: calc(
         var(--header-outer-height) - var(--header-inner-height)
     );
-    --header-bg:rgb(69, 78, 88);
+    --color-a:rgb(255, 255, 255);
+    --color-b: rgb(232, 232, 232); 
+    --color-c:rgb(105, 123, 142);
+    --color-d:rgb(50, 61, 68);
+    --color-e: rgb(0, 0, 0);
+    --font-family-a: 'Quicksand';
+    --font-family-b: 'Euphoria Script';
 }
 
 body {
     position: relative;
     width: 100vw;
-}
-
-#wrapper {
-    background-color: rgb(108, 127, 128);
 }
 
 .responsive-wrapper {
@@ -35,8 +37,8 @@ body {
         var(--header-height-difference) * -1);
     display: flex;
     align-items: center;
-    background-color: var(--header-bg);
-    box-shadow: 0 3px 10px 0 rgb(40, 92, 83);
+    background-color: var(--color-d);
+    box-shadow: 0 3px 10px 0 var(--color-d);
 }
 
 .header-inner {
@@ -61,7 +63,6 @@ body {
 .header-navigation a,
 .header-navigation button {
     font-size: 1.125rem;
-    color: rgb(108, 122, 165);
     margin-left: 2.5rem;
     position: relative;
 }
@@ -69,8 +70,9 @@ body {
 .header-navigation a {
     display: none;
     font-size: 1.5rem;
-    color: rgb(65, 51, 194);
+    color: var(--color-b);
     text-decoration: none;
+    font-family: var(--font-family-a);
 }
 
 .header-navigation button {
@@ -98,7 +100,7 @@ body {
     left: 0;
 }
 
-@media (min-width:800px) {
+@media (min-width:850px) {
 
     .header-navigation a {
         display: inline-block;
@@ -131,10 +133,11 @@ nav {
     right: -40px;
     height: 110vh;
     top: -110vh;
-    background-color: darkcyan;
-    align-items: center;
+    background-color: var(--color-d);
     width: 18rem;
     padding-top: 10rem;
+    text-align: right;
+    padding-right: 3rem;
 }
 
 .navActive {
@@ -149,7 +152,7 @@ nav {
 .burger div {
     width: 25px;
     height: 3px;
-    background-color: rgb(221, 184, 191);
+    background-color: var(--color-b);
     margin: 5px;
     border-radius: 25%;
 }
@@ -167,7 +170,7 @@ nav {
 }
 
 a:hover {
-    color: rgb(36, 36, 44);
+    color: var(--color-c);
 }
 
 .side-menu-links {
@@ -189,11 +192,11 @@ a:hover {
 
 main {
     padding: 5rem;
-    background-color: rgb(216, 213, 216);
+    background-color: var(--color-b);
 }
 
 #article-start-poster {
-    background-color: blue;
+    background-color: var(--color-a);
     margin: 1rem;
     padding: 4rem;
     height: 30rem;
@@ -201,7 +204,7 @@ main {
 }
 
 #article-start-nyheter {
-    background-color: blue;
+    background-color: var(--color-a);
     margin: 1rem;
     padding: 4rem;
     height: 30rem;
@@ -209,7 +212,7 @@ main {
 }
 
 #article-start-inspiration {
-    background-color: blue;
+    background-color: var(--color-a);
     margin: 1rem;
     padding: 4rem;
     height: 30rem;
@@ -228,7 +231,7 @@ main {
 
 .image {
     position: relative;
-    width: 15rem;
+    width: 18rem;
     margin: 2rem;
 }
 
@@ -270,11 +273,33 @@ main {
 
 .image_title {
     font-size: 2em;
+    font-family: var(--font-family-b);
 }
 
 .image_description {
     font-size: 1.25em;
     margin-top: 0.25em;
+    font-family: var(--font-family-a);
+}
+
+.image_under {
+    padding-top: 0.5rem;
+}
+
+.image_under_title {
+    font-size: 2em;
+    color: rgb(75, 82, 82);
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-family-b);
+}
+
+.image_under_price {
+    font-size: 1em;
+    color: rgb(75, 82, 82);
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-family-a);
 }
 
 #section-posters {
@@ -282,6 +307,11 @@ main {
     grid-template-areas: 
     'p1 p2 p3'
     'p4 p5 p6';
+}
+
+#div-posters {
+    display: flex;
+    justify-content: center;
 }
 
 .poster1 {
@@ -322,12 +352,22 @@ main {
     #section-posters {
         display: grid;
         grid-template-areas: 
-        'p1'
-        'p2'
-        'p3'
-        'p4'
-        'p5'
-        'p6';
+        'p1 p2'
+        'p4 p3'
+        'p5 p6';
+    }
+    .image {
+        width: 10rem;
+        margin: 1rem;
+    }
+    .image_under_title {
+        font-size: 1.2em;
+    }
+    .image_under_price {
+        font-size: 0.8em;
+    }
+    .image_overlay:hover {
+        opacity: 0;
     }
 }
 
@@ -355,7 +395,7 @@ main {
 
 footer {
     grid-area: ft;
-    background-color: rgb(60, 78, 77);
+    background-color: var(--color-c);
     padding-top: 3rem;
 }
 
@@ -366,13 +406,18 @@ footer {
     padding: 1rem 5rem 3rem 5rem;
 }
 
-h4 {
+h6 {
     display: flex;
     justify-content: center;
+    color:var(--color-b);
+    font-size: 1.8em;
+    font-family: 'Euphoria Script';
 }
 
 .footertext {
     text-align: center;
+    color: var(--color-b);
+    font-family: 'Quicksand';
 }
 
 #footerlogga {
