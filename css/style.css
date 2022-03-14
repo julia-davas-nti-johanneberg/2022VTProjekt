@@ -56,7 +56,7 @@ body {
 
 .header-logo img {
     display: block;
-    height: calc(var(--header-inner-height) - 50px);
+    height: calc(var(--header-inner-height) - 60px);
 }
 
 .header.navigation {
@@ -169,7 +169,7 @@ nav {
 }
 
 a:hover {
-    color: var(--color-c);
+    color: var(--color-d);
 }
 
 .side-menu-links {
@@ -292,6 +292,14 @@ main {
     margin: 1rem;
 }
 
+.start-title {
+    font-family: var(--font-family-b);
+}
+
+.start-text {
+    font-family: var(--font-family-a);
+}
+
 @media (max-width: 1000px) {
     #boxes-start {
         display: grid;
@@ -314,8 +322,8 @@ main {
         'asi';
     }
     .box-start {
-        height: 20rem;
-        width: 25rem;
+        height: 17rem;
+        width: 21rem;
     }
 }
 
@@ -330,7 +338,7 @@ main {
 .image {
     position: relative;
     width: 18rem;
-    margin: 2rem;
+    margin: 1rem;
 }
 
 .image_img {
@@ -447,16 +455,9 @@ main {
 }
 
 @media screen and (max-width: 700px) {
-    #section-posters {
-        display: grid;
-        grid-template-areas: 
-        'p1 p2'
-        'p4 p3'
-        'p5 p6';
-    }
     .image {
         width: 10rem;
-        margin: 1rem;
+        margin: 0.5rem;
     }
     .image_under_title {
         font-size: 1.2em;
@@ -484,6 +485,96 @@ main {
 
 
 
+#parent-poster-box {
+    display: grid;
+    justify-content: center;
+}
+
+#poster-box {
+    display: grid;
+    grid-template-areas: 
+    'img info';
+    margin: 1rem;
+    max-width: 60rem;
+}
+
+#poster-img-box {
+    grid-area: img;
+}
+
+#poster-img {
+    width: 25rem;
+}
+
+#poster-info-box {
+    grid-area: info;
+    padding: 0 2rem 2rem 2rem;
+}
+
+#first-raw {
+    display: grid;
+    grid-template-areas: 
+    'name price';
+}
+
+#poster-name {
+    grid-area: name;
+    display: flex;
+    justify-content: flex-start;
+    font-family: var(--font-family-a);
+    font-size: 2em;
+}
+
+#poster-price {
+    grid-area: price;
+    display: flex;
+    justify-content: flex-end;
+    font-family: var(--font-family-a);
+    font-size: 2em;
+}
+
+#poster-size {
+    font-family: var(--font-family-a);
+    font-size: 1.4rem;
+    padding-top: 1rem;
+}
+
+#poster-description {
+    font-family: var(--font-family-a);
+    padding-top: 1rem;
+}
+
+#poster-status {
+    font-family: var(--font-family-a);
+    padding-top: 1rem;
+}
+
+#poster-number {
+    font-family: var(--font-family-a);
+    padding-top: 1rem;
+}
+
+@media screen and (max-width: 850px) {
+    #poster-box {
+        grid-template-areas: 
+        'img'
+        'info';
+    }
+    #poster-info-box {
+        padding: 2rem 0 2rem 0;
+    }
+    #poster-img-box {
+        display: flex;
+        justify-content: center;
+    }
+    #poster-img {
+        width: 20rem;
+    }
+}
+
+
+
+
 
 
 
@@ -503,6 +594,8 @@ main {
     'pnt1 pnt2 pnt3';
     display: flex;
     justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
 }
 
 .point {
@@ -510,6 +603,8 @@ main {
     grid-template-areas: 
     'dps dpi';
     padding: 1rem;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .point-one {
@@ -526,24 +621,23 @@ main {
 
 .point-symbol {
     grid-area: pnt-s;
-    height: 3rem;
+    height: 2rem;
 }
 
 .point-title {
     grid-area: pnt-ti;
-    font-family: var(--font-family-b);
-    font-size: 2em; 
-    padding-left: 1rem;
+    font-family: var(--font-family-a);
+    font-size: 1.5em; 
 }
 
 .point-text {
     grid-area: pnt-te;
     font-family: var(--font-family-a);
-    padding-left: 1rem;
 }
 
 .div-point-symbol {
     grid-area: dps;
+    padding: 0.5rem;
     width: 3rem;
 }
 
@@ -551,7 +645,7 @@ main {
     grid-area: dpi;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
     #three-points {
         display: grid;
         grid-template-areas: 
@@ -559,14 +653,97 @@ main {
         'pnt2'
         'pnt3';
     }
-    .point-two {
-        margin-right: 8rem;
+}
+
+@media screen and (max-width: 500px) {
+    .point-title {
+        font-size: 1.3em; 
+    }
+    .point-symbol {
+        height: 2rem;
+    }
+
+    .point-text {
+        max-width: 16rem;
+    }
+
+    .point {
+        margin: 0rem;
+    }
+    main {
+        padding: 0rem;
+    }
+    #poster-box {
+        max-width: 20rem;
     }
 }
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#fler-posters-parent {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#fler-posters {
+    padding: 2rem 0 2rem 0;
+}
+
+#fler-posters-title {
+    font-family: var(--font-family-b);
+    font-size: 3em;
+    text-align: center;
+}
+
+hr {
+    width: 80vw;
+    height: 2px;
+    border-width: 0;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+#three-posters {
+    display: grid;
+    grid-template-areas: 
+    'p1 p2 p3'
+}
+
+#three-posters-parent {
+    display: flex;
+    justify-content: center;
+} 
+
+@media screen and (max-width: 1000px) {
+    #three-posters {
+        display: grid;
+        grid-template-areas: 
+        'p1 p2'
+        'p3 p3';
+    }
+    #fler-posters-title {
+        font-size: 2em;
+    }
+}
 
 
 
@@ -638,6 +815,39 @@ main {
     height: 32rem;
 }
 
+
+#inspiration-info-box {
+    display: flex;
+    justify-content: center;
+}
+
+#inspiration-info-box-child {
+    display: grid;
+    grid-template-areas: 
+    'i-symbol i-info';
+    width: 50rem;
+    margin: 1rem;
+}
+
+#inspiration-symbol {
+    width: 5rem;
+    margin: 0.5rem 1rem 1rem 1rem;
+    grid-area: i-symbol;
+}
+
+#inspiration-info {
+    grid-area: i-info;
+}
+
+#inspiration-title {
+    font-size: 1.8em;
+    font-family: var(--font-family-a);
+}
+
+#inspiration-text {
+    font-family: var(--font-family-a);
+}
+
 @media screen and (max-width: 1100px) {
 
     #div2-ins {
@@ -656,6 +866,10 @@ main {
         height: 33rem;
     }
     .insE {
+        width: 33rem;
+    }
+
+    #inspiration-info-box-child {
         width: 33rem;
     }
 }
@@ -691,7 +905,37 @@ main {
         height: 20rem;
     }
 
+    #inspiration-info-box-child {
+        grid-template-areas: 
+        'i-symbol'
+        'i-info';
+        width: 21rem;
     }
+
+    #inspiration-symbol {
+        width: 3rem;
+    }
+
+    #inspiration-title {
+        font-size: 1.4em;
+    }
+
+    #inspiration-symbol-article {
+        display: flex;
+        justify-content: center;
+    }
+
+    #inspiration-title {
+        text-align: center;
+    }
+    
+    #inspiration-text {
+        text-align: center;
+    }
+    
+
+    }
+
 
 
 
