@@ -16,6 +16,8 @@ document.querySelector('.burger').addEventListener('click', toggleMeny)
 
 
 
+
+
 var slideIndex = 1;
 showSlides(slideIndex);
 

@@ -198,8 +198,6 @@ a:hover {
 
 
 
-
-
 .intro {
     display: flex;
     justify-content: center;
@@ -265,6 +263,7 @@ main {
     'asp asn asi';
     display: flex;
     justify-content: center;
+    margin-top: 2rem;
 }
 
 .article-start-poster {
@@ -500,6 +499,10 @@ main {
 
 .mySlides {
   display: none;
+}
+
+.mySlides img {
+    width: 100%;
 }
 
 .prev, .next {
