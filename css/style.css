@@ -66,7 +66,7 @@ body {
 }
 
 .header-navigation a,
-.header-navigation button {
+.header-navigation .burger {
     font-size: 1.125rem;
     margin-left: 2.5rem;
     position: relative;
@@ -80,20 +80,20 @@ body {
     font-family: var(--font-family-a);
 }
 
-.header-navigation button {
+.header-navigation .burger {
     border: 0;
     background-color: transparent;
     padding: 0;
 }
 
 .header-navigation a:hover:after, 
-.header-navigation button:after {
+.header-navigation .burger:after {
     transform: scalex(1);
 }
 
 .header-navigation a:after,
-.header-navigation button:after {
-    transition: 0,5s ease;
+.header-navigation .burger:after {
+    transition: 0.5s ease;
     content:"";
     display: block;
     width: 100%;
@@ -111,7 +111,7 @@ body {
         display: inline-block;
     }
 
-    .header-navigation button {
+    .header-navigation .burger {
         display: none;
     }
 
@@ -253,7 +253,7 @@ a:hover {
 
 
 main {
-    padding: 5rem;
+    padding: 4rem;
     background-color: var(--color-b);
 }
 
@@ -264,32 +264,35 @@ main {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
+    background-image: url(/img/index_photo.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .article-start-poster {
     grid-area: asp;
-    background-image: url("/img/poster_pumbaa.jpg");
     background-size: cover;
 }
 
 .article-start-nyheter {
     grid-area: asn;
-    background-image: url("/img/poster_prosit.jpg");
     background-size: cover;
 }
 
 .article-start-inspiration {
     grid-area: asi;
-    background-image: url("/img/poster_pumbaa.jpg");
     background-size: cover;
 }
 
 .box-start {
     background-color: var(--color-a);
-    padding: 4rem;
-    height: 30rem;
+    padding: 3.5rem;
+    min-height: 24rem;
     width: 18rem;
     margin: 1rem;
+    opacity: 70%;
 }
 
 .start-title {
@@ -308,7 +311,7 @@ main {
         'asi asi';
     }
     .article-start-inspiration {
-        height: 20rem;
+        min-height: 15rem;
         width: 38rem;
     }
 }
@@ -323,7 +326,7 @@ main {
     }
     .box-start {
         height: 17rem;
-        width: 21rem;
+        width: 19rem;
     }
 }
 
@@ -356,7 +359,7 @@ main {
     color: white;
     display: flex;
     flex-direction: column;
-    align-items: left;
+
     justify-content: center;
     padding: 3rem;
     opacity: 0;
@@ -895,7 +898,7 @@ hr {
 }
 
 .ins {
-    margin: 1rem;
+    margin: 2rem;
 }
 
 .insA {
