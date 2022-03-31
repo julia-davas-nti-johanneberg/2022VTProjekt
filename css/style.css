@@ -178,26 +178,6 @@ a:hover {
     margin-top: 3rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .intro {
     display: flex;
     justify-content: center;
@@ -220,39 +200,6 @@ a:hover {
     text-align: center;
     color: var(--color-e)
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 main {
     padding: 4rem;
@@ -329,14 +276,6 @@ main {
         width: 19rem;
     }
 }
-
-
-
-
-
-
-
-
 
 .image {
     position: relative;
@@ -477,23 +416,6 @@ main {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .slideshow-container {
   width: 25rem;
   position: relative;
@@ -567,32 +489,6 @@ main {
   from {opacity: .4}
   to {opacity: 1}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 #parent-poster-box {
@@ -681,22 +577,6 @@ main {
         width: 21rem;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #three-points {
     display: grid;
@@ -796,26 +676,6 @@ main {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #fler-posters-parent {
     display: flex;
     justify-content: center;
@@ -864,23 +724,6 @@ hr {
         font-size: 2em;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #div1-ins {
     display: flex;
@@ -1055,37 +898,7 @@ hr {
         text-align: center;
     }
     
-
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 footer {
     grid-area: ft;
