@@ -133,7 +133,7 @@ nav {
     right: -40px;
     height: 110vh;
     top: -110vh;
-    background-color: var(--color-c);
+    background-color: var(--color-d);
     width: 18rem;
     padding-top: 10rem;
     text-align: right;
@@ -170,7 +170,7 @@ nav {
 }
 
 a:hover {
-    color: var(--color-d);
+    color: var(--color-a);
 }
 
 .side-menu-links {
@@ -212,11 +212,13 @@ a:hover {
     font-family: var(--font-family-b);
     font-size: 4em;
     text-align: center;
+    color: var(--color-e);
 }
 
 .intro-text {
     font-family: var(--font-family-a);
     text-align: center;
+    color: var(--color-e)
 }
 
 
@@ -273,17 +275,14 @@ main {
 
 .article-start-poster {
     grid-area: asp;
-    background-size: cover;
 }
 
 .article-start-nyheter {
     grid-area: asn;
-    background-size: cover;
 }
 
 .article-start-inspiration {
     grid-area: asi;
-    background-size: cover;
 }
 
 .box-start {
@@ -297,10 +296,12 @@ main {
 
 .start-title {
     font-family: var(--font-family-b);
+    color: var(--color-e);
 }
 
 .start-text {
     font-family: var(--font-family-a);
+    color: var(--color-e)
 }
 
 @media (max-width: 1000px) {
@@ -325,7 +326,6 @@ main {
         'asi';
     }
     .box-start {
-        height: 17rem;
         width: 19rem;
     }
 }
@@ -633,6 +633,7 @@ main {
     justify-content: flex-start;
     font-family: var(--font-family-a);
     font-size: 2em;
+    color: var(--color-e);
 }
 
 #poster-price {
@@ -641,27 +642,20 @@ main {
     justify-content: flex-end;
     font-family: var(--font-family-a);
     font-size: 2em;
+    color: var(--color-e);
 }
 
 #poster-size {
     font-family: var(--font-family-a);
     font-size: 1.4rem;
     padding-top: 1rem;
+    color: var(--color-e);
 }
 
 #poster-description {
     font-family: var(--font-family-a);
     padding-top: 1rem;
-}
-
-#poster-status {
-    font-family: var(--font-family-a);
-    padding-top: 1rem;
-}
-
-#poster-number {
-    font-family: var(--font-family-a);
-    padding-top: 1rem;
+    color: var(--color-e);
 }
 
 @media screen and (max-width: 850px) {
@@ -744,11 +738,13 @@ main {
     grid-area: pnt-ti;
     font-family: var(--font-family-a);
     font-size: 1.5em; 
+    color: var(--color-e);
 }
 
 .point-text {
     grid-area: pnt-te;
     font-family: var(--font-family-a);
+    color: var(--color-e);
 }
 
 .div-point-symbol {
@@ -834,13 +830,15 @@ main {
     font-family: var(--font-family-b);
     font-size: 3em;
     text-align: center;
+
+    color: var(--color-e);
 }
 
 hr {
     width: 80vw;
     height: 2px;
     border-width: 0;
-    background-color: rgb(0, 0, 0);
+    background-color: var(--color-e);
     text-align: center;
 }
 
@@ -898,7 +896,7 @@ hr {
 }
 
 .ins {
-    margin: 2rem;
+    margin: 1rem;
 }
 
 .insA {
@@ -959,11 +957,13 @@ hr {
 
 #inspiration-info {
     grid-area: i-info;
+    color: var(--color-e)
 }
 
 #inspiration-title {
     font-size: 1.8em;
     font-family: var(--font-family-a);
+    color: var(--color-e)
 }
 
 #inspiration-text {
@@ -1089,7 +1089,7 @@ hr {
 
 footer {
     grid-area: ft;
-    background-color: var(--color-d);
+    background-color: var(--color-e);
     padding-top: 3rem;
     margin-top: 4rem;
 }
@@ -1101,7 +1101,7 @@ footer {
     padding: 1rem 5rem 3rem 5rem;
 }
 
-h6 {
+h5 {
     display: flex;
     justify-content: center;
     color:var(--color-b);
