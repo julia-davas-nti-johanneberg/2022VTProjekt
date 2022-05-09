@@ -65,8 +65,8 @@ main {
 .header-logo img {
     display: block;
     height: calc(var(--header-inner-height) - 60px);
-    height: 9rem;
-    padding-bottom: 2rem;
+    height: 11rem;
+    padding-bottom: 3rem;
 }
 
 .header.navigation {
